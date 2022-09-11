@@ -4,11 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-    <div className="App">
-        <App />
-    </div>
-);
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//     // <div className="App">
+//         <App />
+//     // </div>
+// );
+
+const root=ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
+
+
 
 reportWebVitals();
