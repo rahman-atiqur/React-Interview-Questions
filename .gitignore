@@ -9,18 +9,27 @@
 /coverage
 
 # not required components
-button
-imageToText
-InputSumTest
-restaurant
-React-Interview-Questions
-App.xxx2test.js
-src\App.xxxtest.js
 
+# React-Interview-Questions
+# src\components\button\
+# src\components\imageToText\
+# src\components\imageToText\
+# src/components/InputSumTest\
+# src\components\InputSumTest\
+# src\components\restaurant\
+# src\App.xxx2test.js
+# src\App.xxxtest.js
+
+# ignore all directories with the name test
+src/components/
+
+# trying to negate a file inside an ignored directory won't work
+!src/components/interview/InterviewQuestions.jsx
 
 
 # production
 /build
+
 
 # misc
 .DS_Store
