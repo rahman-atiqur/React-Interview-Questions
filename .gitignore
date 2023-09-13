@@ -26,6 +26,8 @@ src/components/
 # trying to negate a file inside an ignored directory won't work
 !src/components/interview/InterviewQuestions.jsx
 
+**/components/*
+
 
 # production
 /build
