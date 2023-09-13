@@ -64,7 +64,7 @@ const InterviewQuestions = () => {
     }
 
     const handleChange = (event) => {
-        // console.log(event.target.value)
+
         questions[serial].answer = event.target.value;
         setAnswers((prevState) => ({
             ...prevState,
@@ -80,12 +80,7 @@ const InterviewQuestions = () => {
 
     const saveAnswer = () => {
         setQuestions(questions);
-        // setQuestions((prevState) => ({
-        //     ...prevState,
-        //     questions,
-        // }));
 
-        // setAnswers(questions[serial].answer);
         setAnswers((prevState) => ({
             ...prevState,
             questions,
@@ -196,7 +191,7 @@ const InterviewQuestions = () => {
                                 onChange={handleChange}
                                 // value={questions[serial].answer}
                                 value={answers[serial].answer}
-                            // value={answer}
+
                             />
                         </div>
                         {/* <div>
