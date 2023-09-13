@@ -1,59 +1,81 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Interview3 = () => {
-    return <div></div>;
+    const [inputs, setInputs] = useState({
+        input1: "",
+        input2: "",
+    });
+    const [sum, setSum] = useState(0);
+    const { input1, input2 } = inputs;
+
+    const handleChange = (e) => {
+        setInputs((prevState) => ({
+            ...prevState,
+            [e.target.name]: e.target.value,
+        }));
+    };
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     setInputs({ input1: "", input2: "" });
+    // };
+
+    // const handelSum=()=>{
+    //     setSum(Number(input1)+Number(input2));
+    // }
+    const container = {
+        width: "700px",
+        height: "800px",
+        backgroundColor: "#def",
+        margin: "10px auto",
+        border: "1px solid black",
+    };
+    const formDiv = {
+        height: "40px",
+        fontSize: "20px",
+    };
+
+    return (
+        <div style={container}>
+            <h1> Interview3 - Addition of Two inputs </h1>{" "}
+            <form
+                onSubmit={(e) => {
+                    e.preventDefault();
+                    setInputs({
+                        input1: "",
+                        input2: "",
+                    });
+                }}
+            >
+                <div style={formDiv}>
+                    <label htmlFor="input1"> Value1: </label>
+                    <input
+                        type="number"
+                        id="input1"
+                        name="input1"
+                        value={input1}
+                        onChange={handleChange}
+                    ></input>{" "}
+                </div>{" "}
+                <div style={formDiv}>
+                    <label htmlFor="input1"> Value2: </label>
+                    <input
+                        type="number"
+                        id="input2"
+                        name="input2"
+                        value={input2}
+                        onChange={handleChange}
+                    ></input>{" "}
+                </div>{" "}
+                <div style={formDiv}>
+                    <button type="submit" onClick={() => setSum(Number(input1) + Number(input2))}>
+                        Sum{" "}
+                    </button>{" "}
+                </div>{" "}
+            </form>{" "}
+            <h2> Result: {sum} </h2>{" "}
+        </div>
+    );
 };
 
 export default Interview3;
-// import env from "./ENV"
-// import axios from "axios"
-
-// const getApiData = (parameters = {}, domain = env.domain) => axios.get(`${domain}/api/v1/data/?${parameters}`)
-//   .then(function (response) {
-//     // handle success
-//     if (!Array.isArray(data) || !data.length) {
-//       return []
-//     }
-//     return data
-//   })
-//   .catch(function (error) {
-//     // handle error
-//     console.log(error);
-// })
-
-// const fetchData = () => {
-//     return (dispatch) => {
-//         dispatch(getCategoriesRequest());
-
-//         axios
-//             .all([axios.get(API_URL_CATEGORIES), axios.get(API_URL_ALL_ITEMS)])
-//             .then(
-//                 axios.spread((result1, result2) => {
-//                     const categories = result1.data;
-//                     const allItems = result2.data;
-//                     dispatch(getCategoriesSuccess(categories));
-//                     dispatch(getAllItemsSuccess(allItems));
-//                 })
-//             )
-//             .catch((error) => {
-//                 const errMsg = error.message;
-//                 dispatch(getCategoriesFailed(errMsg));
-//             });
-//     };
-// };
-
-// componentDidMount() {
-//     fetch("https://stream-restaurant-menu-svc.herokuapp.com/category")
-//         .then((response) => response.json())
-//         .then((result) => {
-//             this.setState({ categories: result });
-//         });
-// }
-
-// useEffect(() => {
-//     fetch("https://stream-restaurant-menu-svc.herokuapp.com/category")
-//         .then((res) => res.json())
-//         .then((res) => {
-//             setCategories(res);
-//         });
-// }, []);

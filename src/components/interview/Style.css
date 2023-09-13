@@ -1,58 +1,58 @@
-body{
-  background-color:#eaeded;
+body {
+  width: 800px;
+  margin: 10px auto;
+  /* background-color: #eaeded; */
+  /* background-color: #fcebb6;; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 /* Home css */
-body{
-    /* margin: 10px auto; */
+
+.container {
+  width: 800px;
+  height: 900px;
+  /* margin: 10px auto; */
+
+  background-color: #d6ecfa;
+  background-color: #eaeded;
+  background-color: #eaeded;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border: 1px solid black;
 }
-.container{
-    width: 600px;
-    height: 700px;
-    margin: 10px auto;
-   
-    background-color: #d6ecfa;
-    /* background-color: #9edeed; */
-    display: flex;
-     flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    border: 1px solid black;
-  }
-  .header{
-    width: 600px;
-    height: 100px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color:#9fd5f7 ; */
 
-  }
-  h1{
-    color: black;
-    font-size: 2rem;
-  }
-  form div label{
+.header {
+  width: 600px;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color:#9fd5f7 ; */
 
-    font-size: 1.2rem;
-    padding: 10px 0;
-    display:block;
-  }
-  form div {
-    margin: 10px;
-    /* display: block; */
-  }
-  input{
-    width: 150px;
-    height: 2rem;
-    font-size: 1.5rem;
-    border: none;
-  }
-  button{
-    width: 150px;
-    height: 2rem;
-    font-size: 1.4rem;
-  }
+}
+
+h1 {
+  color: black;
+  font-size: 2rem;
+}
+
+form div label {
+
+  font-size: 1.2rem;
+  padding: 10px 0;
+  display: block;
+}
+
+form div {
+  margin: 10px;
+  /* display: block; */
+}
+
+
 
 /* ------------------------X----------------------- */
 /* ------------------------X----------------------- */
@@ -60,243 +60,135 @@ body{
 
 
 
- /* addTodo css */
+/* addTodo css */
 .form {
-    width: 500px;
-    background-color: rgb(0, 120, 120);
-    color: white;
-    padding: 0.5rem;
-    border-radius: 0.6rem;
-    margin-bottom: 0.5rem;
-}
-.form-row{
-    margin: 1rem 0;
-    display: flex;
-}
-.form-row label{
-    flex-basis: 20%;
-}
-.form-row input{
-    flex-basis: 80%;
-    border: none;
-    border-radius: 0.4rem;
-    padding: 0.2rem;
-}
-.form-row textarea{
-    flex-basis: 80%;
-    resize: none;
-    border: none;
-    border-radius: 0.6rem;
-    padding: 0.2rem;
+  width: 500px;
+  background-color: rgb(0, 120, 120);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
-.form button{
-    width: 60%;
-    height: 30px;
-    margin: 0 auto;
-    border: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    display: block;
-    /* background-color:ghostwhite; */
-    background-color: deepskyblue;
+.form-row {
+  margin: 1rem 0;
+  display: flex;
 }
-.form button:hover{
-    background-color: orange;
-    color: white;
+
+.form-row label {
+  flex-basis: 20%;
 }
+
+.form-row input {
+  flex-basis: 80%;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+}
+
+.form-row textarea {
+  flex-basis: 80%;
+  resize: none;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.2rem;
+}
+
+.form button {
+  width: 60%;
+  height: 30px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  display: block;
+  /* background-color:ghostwhite; */
+  background-color: deepskyblue;
+}
+
+.form button:hover {
+  background-color: orange;
+  color: white;
+}
+
 /* todos css */
-.todos{
-    width: 500px;
-    background-color: rgb(0, 100, 100);
-    color: white;
-    padding: 0.5rem;
-    border-radius: 0.6rem;
-    overflow: auto;
-    height: 60vh;
+.todos {
+  width: 500px;
+  background-color: rgb(0, 100, 100);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  overflow: auto;
+  height: 60vh;
 }
 
 /* todo css */
-.todo{
-    background-color: rgb(0, 80, 80);
-    margin: 0.5rem;
-    border-radius: 0.6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
+.todo {
+  background-color: rgb(0, 80, 80);
+  margin: 0.5rem;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
 }
-.todo:hover{
-    background-color: rgb(0, 120, 120);
+
+.todo:hover {
+  background-color: rgb(0, 120, 120);
 }
+
 .todo p {
-    opacity: 0.6;
+  opacity: 0.6;
 }
+
 .todo button {
-    border: none;
-    background-color: transparent;
-    color:red;
-    cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
 }
 
 /* simple button */
 
-button{
-  width: 130px;
-  height: 40px;
-  border: none;
-  background-color: #2c974b;
-  /* background-color: transparent; */
-  color: white;
+button {
+  width: 150px;
+  height: 2rem;
+  font-size: 1.4rem;
+  /* border: none; */
+  /* background-color: #2c974b; */
+  /* color: white; */
   border-radius: 5px;
   margin: 5px;
 }
-button:hover{
+
+button:hover {
   background-color: #42c87e;
 
 }
 
-  /* <!-- HTML !-->
-<button class="button-5" role="button">Button 5</button> */
 
-/* CSS */
-.button-5 {
-  align-items: center;
-  background-clip: padding-box;
-  background-color: #fa6400;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
+input {
+  width: 300px;
+  height: 1.3rem;
+  font-size: 1.1rem;
+  border: none;
 }
 
-.button-5:hover,
-.button-5:focus {
-  background-color: #fb8332;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+
+/* Registration Form */
+table {
+  width: 700px;
+  background-color: #def
 }
 
-.button-5:hover {
-  transform: translateY(-1px);
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
-.button-5:active {
-  background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
-}
-
-/* <!-- HTML !-->
-<button class="button-3" role="button">Button 3</button> */
-
-/* CSS */
-.button-3 {
-  appearance: none;
-  background-color: #2ea44f;
-  border: 1px solid rgba(27, 31, 35, .15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  padding: 6px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-.button-3:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
-
-.button-3:hover {
-  background-color: #2c974b;
-}
-
-.button-3:focus {
-  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-  outline: none;
-}
-
-.button-3:disabled {
-  background-color: #94d3a2;
-  border-color: rgba(27, 31, 35, .1);
-  color: rgba(255, 255, 255, .8);
-  cursor: default;
-}
-
-.button-3:active {
-  background-color: #298e46;
-  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-}
-
-/* <!-- HTML !-->
-<button class="button-9" role="button">Button 9</button> */
-
-/* CSS */
-.button-9 {
-  appearance: button;
-  backface-visibility: hidden;
-  background-color: #405cf5;
-  border-radius: 6px;
-  border-width: 0;
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
-  font-size: 100%;
-  height: 44px;
-  line-height: 1.15;
-  margin: 12px 0 0;
-  outline: none;
-  overflow: hidden;
-  padding: 0 25px;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  transform: translateZ(0);
-  transition: all .2s,box-shadow .08s ease-in;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: auto;
-}
-
-.button-9:disabled {
-  cursor: default;
-}
-
-.button-9:focus {
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+tr {
+  height: 40px
 }

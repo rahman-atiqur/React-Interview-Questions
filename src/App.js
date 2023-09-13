@@ -1,20 +1,16 @@
 import React from "react";
 import "./App.css";
-// import Interview2 from "./components/interview/Interview2";
-
-// import Button from "./components/button/Button";
-import Home from "./components/InputSumTest/Home";
-// import Counter from "./components/interview/Counter";
-// import Interview from "./components/interview/Interview";
+// import ImgToText from "./components/imageToText/ImgToText";
+// import RegistratioForm from "./components/interview/RegistratioForm";
+import InterviewQuestions from "./components/interview/InterviewQuestions";
 
 class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <Home />
-                {/* <Counter /> */}
-                {/* <Interview /> */}
-                {/* <Interview2 /> */}
+                <InterviewQuestions />
+                {/* <ImgToText /> */}
+                {/* <RegistratioForm/> */}
             </div>
         );
     }

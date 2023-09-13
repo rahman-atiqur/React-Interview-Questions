@@ -8,6 +8,16 @@
 # testing
 /coverage
 
+# not required components
+components/button
+components/imageToText
+src\components\imageToText
+components/InputSumTest
+components/restaurent
+React-Interview-Questions
+
+
+
 # production
 /build
 

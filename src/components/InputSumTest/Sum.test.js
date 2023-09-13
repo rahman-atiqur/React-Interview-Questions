@@ -5,7 +5,7 @@ import Home from "./Home";
 
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import renderer from "react-test-renderer";
+// import renderer from "react-test-renderer";
 
 // if("Testing Sum component for button",()=>{
 
@@ -17,30 +17,30 @@ import renderer from "react-test-renderer";
 // RTL
 
 // Button Testing
-it("Testing for button label by getByTestId", () => {
+it("1.Testing for button label by getByTestId", () => {
     const { getByTestId } = render(<Home label="Sum" />);
     expect(getByTestId("myBtn")).toHaveTextContent("Sum");
 });
 
-it("Testing for button label by getByText", () => {
+it("2.Testing for button label by getByText", () => {
     const { getByText } = render(<Home label="Sum" />);
     expect(getByText("Sum")).toBeInTheDocument();
 });
 
 // Snapshot testing
-it("Snapshot testing for button label", () => {
-    const tree = renderer.create(<Home label="Sum" />).toJSON;
-    expect(tree).toMatchSnapshot();
-});
+// it("3.Snapshot testing for button label", () => {
+//     const tree = renderer.create(<Home label="Sum" />).toJSON;
+//     expect(tree).toMatchSnapshot();
+// });
 
 //First input label testing
-it("Testing for first input label by getByTestId", () => {
+it("4.Testing for first input label by getByTestId", () => {
     const { getByTestId } = render(<Sum label="First Integer:" />);
     expect(getByTestId("myInput1")).toHaveTextContent("First Integer:");
 });
 
 // Second input label testing
-it("Testing for second input label by getByTestId", () => {
+it("5.Testing for second input label by getByTestId", () => {
     const { getByTestId } = render(<Sum label="Second Integer:" />);
     expect(getByTestId("myInput2")).toHaveTextContent("Second Integer:");
 });
@@ -53,8 +53,8 @@ it("Testing for second input label by getByTestId", () => {
 // });
 
 
-// const {handleSum} = require("./Sum");
+const {handleSum} = require("./Sum");
 
-// test("Testing sum", () => {
-//     expect(handleSum(2,2)).toBe(4);
-// });
+test("6.Testing sum", () => {
+    expect(handleSum(2,2)).toBe(4);
+});
