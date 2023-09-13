@@ -9,12 +9,13 @@
 /coverage
 
 # not required components
-components/button
-components/imageToText
-src\components\imageToText
-components/InputSumTest
-components/restaurent
+button
+imageToText
+InputSumTest
+restaurant
 React-Interview-Questions
+App.xxx2test.js
+src\App.xxxtest.js
 
 
 
